@@ -1,0 +1,241 @@
+filing_id,borrower_raw,industry,instrument,rate_text,spread_bps,maturity_date,principal,cost,fair_value,is_pik,is_non_accrual
+MOCK-ARCC-2025-12-31,"Mock Atlas Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-06-30,40000000,40000000,39500000,false,false
+MOCK-ARCC-2025-12-31,"Mock Harbor Health, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-03-31,22000000,22000000,21945000,false,false
+MOCK-ARCC-2025-12-31,"Mock Birch Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,14250000,false,false
+MOCK-ARCC-2025-12-31,"Mock Cobalt Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,17550000,true,false
+MOCK-ARCC-2025-12-31,"Mock Drift Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,19897500,false,false
+MOCK-ARCC-2025-12-31,"Mock Ember Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,23100000,true,false
+MOCK-ARCC-2025-12-31,"Mock Fable Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,26730000,true,false
+MOCK-ARCC-2025-12-31,"Mock Grove Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,29100000,false,false
+MOCK-ARCC-2025-12-31,"Mock Birch Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-ARCC-2025-12-31,"Mock Birch Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26898750,false,false
+MOCK-ARCC-2025-12-31,Mock Birch Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,18620000,,
+MOCK-ARCC-2025-12-31,"Mock Birch Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-ARCC-2025-12-31,"Mock Birch Software, Inc.",Software & Services,Equity,,,,,4000000,3100000,,
+MOCK-ARCC-2025-12-31,"Mock Atlas Cloud, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2030-06-30,12000000,12000000,11610000,false,false
+MOCK-ARCC-2025-12-31,"Mock Extraordinarily Long Borrower Name For Testing How Wide Table Columns Wrap In The Interface, LLC",Business Services,First lien,SOFR + 5.75%,575,2031-02-28,14000000,14000000,13965000,false,false
+MOCK-ARCC-2026-03-31,"Mock Atlas Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-06-30,40000000,40000000,39000000,false,false
+MOCK-ARCC-2026-03-31,"Mock Harbor Health, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-03-31,22000000,22000000,21890000,false,false
+MOCK-ARCC-2026-03-31,"Mock Birch Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,13500000,false,false
+MOCK-ARCC-2026-03-31,"Mock Cobalt Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,17100000,true,false
+MOCK-ARCC-2026-03-31,"Mock Drift Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,18795000,false,false
+MOCK-ARCC-2026-03-31,"Mock Ember Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,22200000,true,false
+MOCK-ARCC-2026-03-31,"Mock Fable Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,26460000,true,false
+MOCK-ARCC-2026-03-31,"Mock Grove Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,28200000,false,false
+MOCK-ARCC-2026-03-31,"Mock Birch Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-ARCC-2026-03-31,"Mock Birch Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26797500,false,false
+MOCK-ARCC-2026-03-31,Mock Birch Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,18240000,,
+MOCK-ARCC-2026-03-31,"Mock Birch Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-ARCC-2026-03-31,"Mock Birch Software, Inc.",Software & Services,Equity,,,,,4000000,2200000,,
+MOCK-ARCC-2026-03-31,"Mock Atlas Cloud, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2030-06-30,12000000,12000000,11220000,false,false
+MOCK-ARCC-2026-03-31,"Mock Extraordinarily Long Borrower Name For Testing How Wide Table Columns Wrap In The Interface, LLC",Business Services,First lien,SOFR + 5.75%,575,2031-02-28,14000000,14000000,13930000,false,false
+MOCK-ARCC-2026-06-30,"Mock Atlas Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-06-30,40000000,40000000,38500000,false,false
+MOCK-ARCC-2026-06-30,"Mock Harbor Health, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-03-31,22000000,22000000,21835000,false,false
+MOCK-ARCC-2026-06-30,"Mock Birch Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,12750000,false,false
+MOCK-ARCC-2026-06-30,"Mock Cobalt Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,16650000,true,false
+MOCK-ARCC-2026-06-30,"Mock Drift Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,17692500,false,false
+MOCK-ARCC-2026-06-30,"Mock Ember Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,21300000,true,false
+MOCK-ARCC-2026-06-30,"Mock Fable Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,26190000,true,false
+MOCK-ARCC-2026-06-30,"Mock Grove Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,27300000,false,false
+MOCK-ARCC-2026-06-30,"Mock Birch Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-ARCC-2026-06-30,"Mock Birch Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26696250,false,false
+MOCK-ARCC-2026-06-30,Mock Birch Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,17860000,,
+MOCK-ARCC-2026-06-30,"Mock Birch Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-ARCC-2026-06-30,"Mock Birch Software, Inc.",Software & Services,Equity,,,,,4000000,1300000,,
+MOCK-ARCC-2026-06-30,"Mock Atlas Cloud, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2030-06-30,12000000,12000000,10830000,false,false
+MOCK-ARCC-2026-06-30,"Mock Extraordinarily Long Borrower Name For Testing How Wide Table Columns Wrap In The Interface, LLC",Business Services,First lien,SOFR + 5.75%,575,2031-02-28,14000000,14000000,13895000,false,false
+MOCK-ARCC-2026-09-30,"Mock Atlas Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-06-30,40000000,40000000,38000000,false,false
+MOCK-ARCC-2026-09-30,"Mock Harbor Health, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-03-31,22000000,22000000,21780000,false,false
+MOCK-ARCC-2026-09-30,"Mock Birch Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,12000000,false,false
+MOCK-ARCC-2026-09-30,"Mock Cobalt Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,16200000,true,false
+MOCK-ARCC-2026-09-30,"Mock Drift Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,16590000,false,false
+MOCK-ARCC-2026-09-30,"Mock Ember Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,20400000,true,false
+MOCK-ARCC-2026-09-30,"Mock Fable Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,25920000,true,false
+MOCK-ARCC-2026-09-30,"Mock Grove Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,26400000,false,false
+MOCK-ARCC-2026-09-30,"Mock Birch Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-ARCC-2026-09-30,"Mock Birch Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26595000,false,false
+MOCK-ARCC-2026-09-30,Mock Birch Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,17480000,,
+MOCK-ARCC-2026-09-30,"Mock Birch Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-ARCC-2026-09-30,"Mock Birch Software, Inc.",Software & Services,Equity,,,,,4000000,400000,,
+MOCK-ARCC-2026-09-30,"Mock Atlas Cloud, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2030-06-30,12000000,12000000,10440000,false,false
+MOCK-ARCC-2026-09-30,"Mock Extraordinarily Long Borrower Name For Testing How Wide Table Columns Wrap In The Interface, LLC",Business Services,First lien,SOFR + 5.75%,575,2031-02-28,14000000,14000000,13860000,false,false
+MOCK-OBDC-2025-12-31,"Mock Atlas Software, LLC",Software & Services,First lien,SOFR + 5.75%,575,2029-06-30,35000000,35000000,34125000,false,false
+MOCK-OBDC-2025-12-31,"Mock Juniper Care, Inc.",Health Care,First lien,SOFR + 5.75%,575,2031-01-31,28000000,28000000,28000000,false,false
+MOCK-OBDC-2025-12-31,"Mock Hollow Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,14250000,false,false
+MOCK-OBDC-2025-12-31,"Mock Indigo Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,17550000,true,false
+MOCK-OBDC-2025-12-31,"Mock Jade Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,19897500,false,false
+MOCK-OBDC-2025-12-31,"Mock Kestrel Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,23100000,true,false
+MOCK-OBDC-2025-12-31,"Mock Lumen Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,26730000,true,false
+MOCK-OBDC-2025-12-31,"Mock Maple Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,29100000,false,false
+MOCK-OBDC-2025-12-31,"Mock Hollow Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-OBDC-2025-12-31,"Mock Hollow Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26898750,false,false
+MOCK-OBDC-2025-12-31,Mock Hollow Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,18620000,,
+MOCK-OBDC-2025-12-31,"Mock Hollow Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-OBDC-2025-12-31,"Mock Hollow Software, Inc.",Software & Services,Equity,,,,,4000000,3100000,,
+MOCK-OBDC-2025-12-31,"Mock Atlas Data, LP",Software & Services,Unitranche,SOFR + 6.00%,600,2029-03-31,16000000,16000000,15440000,false,false
+MOCK-OBDC-2025-12-31,"Mock <b>Bold</b> Systems, LLC",Business Services,First lien,SOFR + 5.75%,575,2028-11-30,11000000,11000000,10697500,false,false
+MOCK-OBDC-2026-03-31,"Mock Atlas Software, LLC",Software & Services,First lien,SOFR + 5.75%,575,2029-06-30,35000000,35000000,33250000,false,false
+MOCK-OBDC-2026-03-31,"Mock Juniper Care, Inc.",Health Care,First lien,SOFR + 5.75%,575,2031-01-31,28000000,28000000,28000000,false,false
+MOCK-OBDC-2026-03-31,"Mock Hollow Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,13500000,false,false
+MOCK-OBDC-2026-03-31,"Mock Indigo Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,17100000,true,false
+MOCK-OBDC-2026-03-31,"Mock Jade Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,18795000,false,false
+MOCK-OBDC-2026-03-31,"Mock Kestrel Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,22200000,true,false
+MOCK-OBDC-2026-03-31,"Mock Lumen Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,26460000,true,false
+MOCK-OBDC-2026-03-31,"Mock Maple Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,28200000,false,false
+MOCK-OBDC-2026-03-31,"Mock Hollow Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-OBDC-2026-03-31,"Mock Hollow Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26797500,false,false
+MOCK-OBDC-2026-03-31,Mock Hollow Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,18240000,,
+MOCK-OBDC-2026-03-31,"Mock Hollow Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-OBDC-2026-03-31,"Mock Hollow Software, Inc.",Software & Services,Equity,,,,,4000000,2200000,,
+MOCK-OBDC-2026-03-31,"Mock Atlas Data, LP",Software & Services,Unitranche,SOFR + 6.00%,600,2029-03-31,16000000,16000000,14880000,false,false
+MOCK-OBDC-2026-03-31,"Mock <b>Bold</b> Systems, LLC",Business Services,First lien,SOFR + 5.75%,575,2028-11-30,11000000,11000000,10395000,false,false
+MOCK-OBDC-2026-06-30,"Mock Atlas Software, LLC",Software & Services,First lien,SOFR + 5.75%,575,2029-06-30,35000000,35000000,32375000,false,false
+MOCK-OBDC-2026-06-30,"Mock Juniper Care, Inc.",Health Care,First lien,SOFR + 5.75%,575,2031-01-31,28000000,28000000,28000000,false,false
+MOCK-OBDC-2026-06-30,"Mock Hollow Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,12750000,false,false
+MOCK-OBDC-2026-06-30,"Mock Indigo Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,16650000,true,false
+MOCK-OBDC-2026-06-30,"Mock Jade Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,17692500,false,false
+MOCK-OBDC-2026-06-30,"Mock Kestrel Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,21300000,true,false
+MOCK-OBDC-2026-06-30,"Mock Lumen Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,26190000,true,false
+MOCK-OBDC-2026-06-30,"Mock Maple Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,27300000,false,false
+MOCK-OBDC-2026-06-30,"Mock Hollow Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-OBDC-2026-06-30,"Mock Hollow Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26696250,false,false
+MOCK-OBDC-2026-06-30,Mock Hollow Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,17860000,,
+MOCK-OBDC-2026-06-30,"Mock Hollow Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-OBDC-2026-06-30,"Mock Hollow Software, Inc.",Software & Services,Equity,,,,,4000000,1300000,,
+MOCK-OBDC-2026-06-30,"Mock Atlas Data, LP",Software & Services,Unitranche,SOFR + 6.00%,600,2029-03-31,16000000,16000000,14320000,false,false
+MOCK-OBDC-2026-06-30,"Mock <b>Bold</b> Systems, LLC",Business Services,First lien,SOFR + 5.75%,575,2028-11-30,11000000,11000000,10092500,false,false
+MOCK-OBDC-2026-09-30,"Mock Atlas Software, LLC",Software & Services,First lien,SOFR + 5.75%,575,2029-06-30,35000000,35000000,31500000,false,false
+MOCK-OBDC-2026-09-30,"Mock Juniper Care, Inc.",Health Care,First lien,SOFR + 5.75%,575,2031-01-31,28000000,28000000,28000000,false,false
+MOCK-OBDC-2026-09-30,"Mock Hollow Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,12000000,false,false
+MOCK-OBDC-2026-09-30,"Mock Indigo Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,16200000,true,false
+MOCK-OBDC-2026-09-30,"Mock Jade Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,16590000,false,false
+MOCK-OBDC-2026-09-30,"Mock Kestrel Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,20400000,true,false
+MOCK-OBDC-2026-09-30,"Mock Lumen Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,25920000,true,false
+MOCK-OBDC-2026-09-30,"Mock Maple Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,26400000,false,false
+MOCK-OBDC-2026-09-30,"Mock Hollow Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-OBDC-2026-09-30,"Mock Hollow Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26595000,false,false
+MOCK-OBDC-2026-09-30,Mock Hollow Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,17480000,,
+MOCK-OBDC-2026-09-30,"Mock Hollow Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-OBDC-2026-09-30,"Mock Hollow Software, Inc.",Software & Services,Equity,,,,,4000000,400000,,
+MOCK-OBDC-2026-09-30,"Mock Atlas Data, LP",Software & Services,Unitranche,SOFR + 6.00%,600,2029-03-31,16000000,16000000,13760000,false,false
+MOCK-OBDC-2026-09-30,"Mock <b>Bold</b> Systems, LLC",Business Services,First lien,SOFR + 5.75%,575,2028-11-30,11000000,11000000,9790000,false,false
+MOCK-FSK-2025-12-31,Mock Atlas Software Holdings,Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-06-30,30000000,30000000,28350000,true,false
+MOCK-FSK-2025-12-31,"Mock Harbor Health, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-03-31,18000000,18000000,17932500,false,false
+MOCK-FSK-2025-12-31,"Mock Nimbus Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,14250000,false,false
+MOCK-FSK-2025-12-31,"Mock Onyx Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,17550000,true,false
+MOCK-FSK-2025-12-31,"Mock Pebble Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,19897500,false,false
+MOCK-FSK-2025-12-31,"Mock Quarry Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,23100000,true,false
+MOCK-FSK-2025-12-31,"Mock Ridge Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,26730000,true,false
+MOCK-FSK-2025-12-31,"Mock Sable Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,29100000,false,false
+MOCK-FSK-2025-12-31,"Mock Nimbus Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-FSK-2025-12-31,"Mock Nimbus Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26898750,false,false
+MOCK-FSK-2025-12-31,Mock Nimbus Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,18620000,,
+MOCK-FSK-2025-12-31,"Mock Nimbus Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-FSK-2025-12-31,"Mock Nimbus Software, Inc.",Software & Services,Equity,,,,,4000000,3100000,,
+MOCK-FSK-2025-12-31,"Mock Nova Retail, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,2027-12-31,24000000,24000000,22200000,false,false
+MOCK-FSK-2025-12-31,"Mock Delta Media, LLC",Media,Second lien,SOFR + 8.50% (2.00% PIK),850,2028-06-30,21000000,21000000,19005000,true,false
+MOCK-FSK-2026-03-31,Mock Atlas Software Holdings,Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-06-30,30000000,30000000,26700000,true,true
+MOCK-FSK-2026-03-31,"Mock Harbor Health, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-03-31,18000000,18000000,17865000,false,false
+MOCK-FSK-2026-03-31,"Mock Nimbus Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,13500000,false,false
+MOCK-FSK-2026-03-31,"Mock Onyx Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,17100000,true,false
+MOCK-FSK-2026-03-31,"Mock Pebble Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,18795000,false,false
+MOCK-FSK-2026-03-31,"Mock Quarry Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,22200000,true,false
+MOCK-FSK-2026-03-31,"Mock Ridge Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,26460000,true,false
+MOCK-FSK-2026-03-31,"Mock Sable Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,28200000,false,false
+MOCK-FSK-2026-03-31,"Mock Nimbus Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-FSK-2026-03-31,"Mock Nimbus Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26797500,false,false
+MOCK-FSK-2026-03-31,Mock Nimbus Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,18240000,,
+MOCK-FSK-2026-03-31,"Mock Nimbus Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-FSK-2026-03-31,"Mock Nimbus Software, Inc.",Software & Services,Equity,,,,,4000000,2200000,,
+MOCK-FSK-2026-03-31,"Mock Nova Retail, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,2027-12-31,24000000,24000000,20400000,false,false
+MOCK-FSK-2026-03-31,"Mock Delta Media, LLC",Media,Second lien,SOFR + 8.50% (2.00% PIK),850,2028-06-30,21000000,21000000,17010000,true,false
+MOCK-FSK-2026-06-30,Mock Atlas Software Holdings,Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-06-30,30000000,30000000,25050000,true,true
+MOCK-FSK-2026-06-30,"Mock Harbor Health, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-03-31,18000000,18000000,17797500,false,false
+MOCK-FSK-2026-06-30,"Mock Nimbus Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,12750000,false,false
+MOCK-FSK-2026-06-30,"Mock Onyx Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,16650000,true,false
+MOCK-FSK-2026-06-30,"Mock Pebble Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,17692500,false,false
+MOCK-FSK-2026-06-30,"Mock Quarry Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,21300000,true,false
+MOCK-FSK-2026-06-30,"Mock Ridge Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,26190000,true,false
+MOCK-FSK-2026-06-30,"Mock Sable Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,27300000,false,false
+MOCK-FSK-2026-06-30,"Mock Nimbus Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-FSK-2026-06-30,"Mock Nimbus Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26696250,false,false
+MOCK-FSK-2026-06-30,Mock Nimbus Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,17860000,,
+MOCK-FSK-2026-06-30,"Mock Nimbus Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-FSK-2026-06-30,"Mock Nimbus Software, Inc.",Software & Services,Equity,,,,,4000000,1300000,,
+MOCK-FSK-2026-06-30,"Mock Nova Retail, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,2027-12-31,24000000,24000000,18600000,false,true
+MOCK-FSK-2026-06-30,"Mock Delta Media, LLC",Media,Second lien,SOFR + 8.50% (2.00% PIK),850,2028-06-30,21000000,21000000,15015000,true,false
+MOCK-FSK-2026-09-30,Mock Atlas Software Holdings,Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-06-30,30000000,30000000,23400000,true,true
+MOCK-FSK-2026-09-30,"Mock Harbor Health, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-03-31,18000000,18000000,17730000,false,false
+MOCK-FSK-2026-09-30,"Mock Nimbus Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,12000000,false,false
+MOCK-FSK-2026-09-30,"Mock Onyx Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,16200000,true,false
+MOCK-FSK-2026-09-30,"Mock Pebble Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,16590000,false,false
+MOCK-FSK-2026-09-30,"Mock Quarry Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,20400000,true,false
+MOCK-FSK-2026-09-30,"Mock Ridge Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,25920000,true,false
+MOCK-FSK-2026-09-30,"Mock Sable Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,26400000,false,false
+MOCK-FSK-2026-09-30,"Mock Nimbus Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-FSK-2026-09-30,"Mock Nimbus Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26595000,false,false
+MOCK-FSK-2026-09-30,Mock Nimbus Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,17480000,,
+MOCK-FSK-2026-09-30,"Mock Nimbus Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-FSK-2026-09-30,"Mock Nimbus Software, Inc.",Software & Services,Equity,,,,,4000000,400000,,
+MOCK-FSK-2026-09-30,"Mock Nova Retail, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,2027-12-31,24000000,24000000,16800000,false,true
+MOCK-FSK-2026-09-30,"Mock Delta Media, LLC",Media,Second lien,SOFR + 8.50% (2.00% PIK),850,2028-06-30,21000000,21000000,13020000,true,true
+MOCK-BXSL-2025-12-31,Mock Atlas Software LP,Software & Services,First lien,SOFR + 5.75%,575,2029-06-30,25000000,25000000,24562500,false,false
+MOCK-BXSL-2025-12-31,"Mock Harbor Health, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-03-31,20000000,20000000,19950000,false,false
+MOCK-BXSL-2025-12-31,"Mock Tundra Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,14250000,false,false
+MOCK-BXSL-2025-12-31,"Mock Umber Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,17550000,true,false
+MOCK-BXSL-2025-12-31,"Mock Vista Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,19897500,false,false
+MOCK-BXSL-2025-12-31,"Mock Willow Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,23100000,true,false
+MOCK-BXSL-2025-12-31,"Mock Yarrow Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,26730000,true,false
+MOCK-BXSL-2025-12-31,"Mock Zephyr Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,29100000,false,false
+MOCK-BXSL-2025-12-31,"Mock Tundra Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-BXSL-2025-12-31,"Mock Tundra Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26898750,false,false
+MOCK-BXSL-2025-12-31,Mock Tundra Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,18620000,,
+MOCK-BXSL-2025-12-31,"Mock Tundra Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-BXSL-2025-12-31,"Mock Tundra Software, Inc.",Software & Services,Equity,,,,,4000000,3100000,,
+MOCK-BXSL-2025-12-31,"Mock Atlas Clouds, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2030-06-30,13000000,13000000,12642500,false,false
+MOCK-BXSL-2025-12-31,"Mock Summit Parts, LLC",Industrials,First lien,SOFR + 5.75%,575,2031-07-31,26000000,26000000,26032500,false,false
+MOCK-BXSL-2026-03-31,Mock Atlas Software LP,Software & Services,First lien,SOFR + 5.75%,575,2029-06-30,25000000,25000000,24125000,false,false
+MOCK-BXSL-2026-03-31,"Mock Harbor Health, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-03-31,20000000,20000000,19900000,false,false
+MOCK-BXSL-2026-03-31,"Mock Tundra Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,13500000,false,false
+MOCK-BXSL-2026-03-31,"Mock Umber Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,17100000,true,false
+MOCK-BXSL-2026-03-31,"Mock Vista Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,18795000,false,false
+MOCK-BXSL-2026-03-31,"Mock Willow Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,22200000,true,false
+MOCK-BXSL-2026-03-31,"Mock Yarrow Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,26460000,true,false
+MOCK-BXSL-2026-03-31,"Mock Zephyr Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,28200000,false,false
+MOCK-BXSL-2026-03-31,"Mock Tundra Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-BXSL-2026-03-31,"Mock Tundra Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26797500,false,false
+MOCK-BXSL-2026-03-31,Mock Tundra Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,18240000,,
+MOCK-BXSL-2026-03-31,"Mock Tundra Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-BXSL-2026-03-31,"Mock Tundra Software, Inc.",Software & Services,Equity,,,,,4000000,2200000,,
+MOCK-BXSL-2026-03-31,"Mock Atlas Clouds, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2030-06-30,13000000,13000000,12285000,false,false
+MOCK-BXSL-2026-03-31,"Mock Summit Parts, LLC",Industrials,First lien,SOFR + 5.75%,575,2031-07-31,26000000,26000000,26065000,false,false
+MOCK-BXSL-2026-06-30,Mock Atlas Software LP,Software & Services,First lien,SOFR + 5.75%,575,2029-06-30,25000000,25000000,23687500,false,false
+MOCK-BXSL-2026-06-30,"Mock Harbor Health, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-03-31,20000000,20000000,19850000,false,false
+MOCK-BXSL-2026-06-30,"Mock Tundra Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,12750000,false,false
+MOCK-BXSL-2026-06-30,"Mock Umber Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,16650000,true,false
+MOCK-BXSL-2026-06-30,"Mock Vista Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,17692500,false,false
+MOCK-BXSL-2026-06-30,"Mock Willow Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,21300000,true,false
+MOCK-BXSL-2026-06-30,"Mock Yarrow Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,26190000,true,false
+MOCK-BXSL-2026-06-30,"Mock Zephyr Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,27300000,false,false
+MOCK-BXSL-2026-06-30,"Mock Tundra Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-BXSL-2026-06-30,"Mock Tundra Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26696250,false,false
+MOCK-BXSL-2026-06-30,Mock Tundra Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,17860000,,
+MOCK-BXSL-2026-06-30,"Mock Tundra Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-BXSL-2026-06-30,"Mock Tundra Software, Inc.",Software & Services,Equity,,,,,4000000,1300000,,
+MOCK-BXSL-2026-06-30,"Mock Atlas Clouds, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2030-06-30,13000000,13000000,11927500,false,false
+MOCK-BXSL-2026-06-30,"Mock Summit Parts, LLC",Industrials,First lien,SOFR + 5.75%,575,2031-07-31,26000000,26000000,26097500,false,false
+MOCK-BXSL-2026-09-30,Mock Atlas Software LP,Software & Services,First lien,SOFR + 5.75%,575,2029-06-30,25000000,25000000,23250000,false,false
+MOCK-BXSL-2026-09-30,"Mock Harbor Health, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-03-31,20000000,20000000,19800000,false,false
+MOCK-BXSL-2026-09-30,"Mock Tundra Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,15000000,15000000,12000000,false,false
+MOCK-BXSL-2026-09-30,"Mock Umber Software, Inc.",Software & Services,Unitranche,SOFR + 6.00% (2.00% PIK),600,2029-12-31,18000000,18000000,16200000,true,false
+MOCK-BXSL-2026-09-30,"Mock Vista Software, Inc.",Software & Services,Second lien,SOFR + 8.50%,850,2029-12-31,21000000,21000000,16590000,false,false
+MOCK-BXSL-2026-09-30,"Mock Willow Software, Inc.",Software & Services,First lien,SOFR + 5.75% (2.00% PIK),575,2029-12-31,24000000,24000000,20400000,true,false
+MOCK-BXSL-2026-09-30,"Mock Yarrow Software, Inc.",Software & Services,Subordinated,SOFR + 10.00% (2.00% PIK),1000,2029-12-31,27000000,27000000,25920000,true,false
+MOCK-BXSL-2026-09-30,"Mock Zephyr Software, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2029-12-31,30000000,30000000,26400000,false,false
+MOCK-BXSL-2026-09-30,"Mock Tundra Logistics, LLC",Transportation,First lien,SOFR + 5.75%,575,2031-05-31,33000000,33000000,33000000,false,false
+MOCK-BXSL-2026-09-30,"Mock Tundra Foods, Inc.",Consumer Products,First lien,SOFR + 5.75%,575,,27000000,27000000,26595000,false,false
+MOCK-BXSL-2026-09-30,Mock Tundra Energy LP,Energy,First lien,SOFR + 5.75%,575,2028-09-30,19000000,19000000,17480000,,
+MOCK-BXSL-2026-09-30,"Mock Tundra Dental, LLC",Health Care,First lien,SOFR + 5.75%,575,2030-12-31,0,0,-50000,false,false
+MOCK-BXSL-2026-09-30,"Mock Tundra Software, Inc.",Software & Services,Equity,,,,,4000000,400000,,
+MOCK-BXSL-2026-09-30,"Mock Atlas Clouds, Inc.",Software & Services,First lien,SOFR + 5.75%,575,2030-06-30,13000000,13000000,11570000,false,false
+MOCK-BXSL-2026-09-30,"Mock Summit Parts, LLC",Industrials,First lien,SOFR + 5.75%,575,2031-07-31,26000000,26000000,26130000,false,false

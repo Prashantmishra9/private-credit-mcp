@@ -1,0 +1,27 @@
+[project]
+name = "private-credit-mcp"
+version = "0.1.0"
+description = "MCP server for spotting private credit borrower stress in public BDC filings"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=2.3,<2.4",
+    "duckdb",
+    "httpx",
+    "pydantic",
+    "rapidfuzz",
+    "lxml",
+    "fastapi",
+    "uvicorn",
+    "pyyaml",
+    "python-dotenv",
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

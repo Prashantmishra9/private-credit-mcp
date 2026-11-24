@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Private Credit MCP Tester</title>
+<style>
+  :root { color-scheme: light dark; --line: #8886; --accent: #2563eb; --bad: #c62828; }
+  * { box-sizing: border-box; }
+  body { font: 15px/1.5 system-ui, sans-serif; margin: 0 auto; max-width: 1200px; padding: 16px; }
+  .layout { display: grid; grid-template-columns: 320px minmax(0, 1fr); gap: 24px; }
+  label { display: block; margin: 12px 0 4px; font-weight: 600; }
+  input, select, button { font: inherit; width: 100%; padding: 6px 8px; }
+  input[type=checkbox] { width: auto; margin-right: 6px; }
+  .option { font-weight: 400; margin: 2px 0; }
+  button { margin-top: 16px; background: var(--accent); color: white; border: 0; border-radius: 4px; padding: 8px; }
+  button:disabled { opacity: .5; }
+  .scroll { overflow: auto; max-height: 480px; border: 1px solid var(--line); margin-bottom: 16px; }
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { border-bottom: 1px solid var(--line); padding: 5px 8px; text-align: left; vertical-align: top; }
+  pre { font-size: 12px; padding: 8px; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .banner { background: #ffd54f; color: #222; padding: 8px 12px; font-weight: 600; border-radius: 4px; }
+  .error { color: var(--bad); white-space: pre-wrap; }
+  @media (max-width: 760px) { .layout { grid-template-columns: minmax(0, 1fr); } }
+</style>
+</head>
+<body>
+<p id="banner" class="banner" hidden>MOCK DATA, not real filings. Every figure is invented.</p>
+<h1>Private Credit MCP Tester</h1>
+<div class="layout">
+  <form id="form">
+    <label for="tool">Tool</label>
+    <select id="tool"></select>
+    <p id="description"></p>
+    <div id="fields"></div>
+    <button id="run" disabled>Run tool</button>
+  </form>
+  <main>
+    <p id="status" role="status">Loading tools...</p>
+    <div id="result"></div>
+  </main>
+</div>
+
+<script>
+const byId = (id) => document.getElementById(id);
+let tools = [];
+
+// All text goes through textContent, so filing data can never run as HTML.
+function element(tag, text, parent) {
+  const node = document.createElement(tag);
+  if (text !== undefined) node.textContent = text;
+  if (parent) parent.append(node);
+  return node;
+}
+
+// ---------- 1. Build a form from the tool's input schema ----------
+
+// Follow "$ref" and drop the "or null" branch of optional inputs.
+function simplify(schema, root) {
+  if (schema.$ref) {
+    const target = root.$defs[schema.$ref.split("/").pop()];
+    return { ...simplify(target, root), default: schema.default };
+  }
+  const branch = (schema.anyOf || []).find((option) => option.type !== "null");
+  return branch ? { ...simplify(branch, root), default: schema.default } : schema;
+}
+
+function addField(name, schema, required, root) {
+  const box = element("div", undefined, byId("fields"));
+  const label = element("label", name + (required ? " *" : ""), box);
+  const items = schema.type === "array" ? simplify(schema.items, root) : null;
+
+  if (items && items.enum) {                       // list of choices
+    for (const choice of items.enum) {
+      const row = element("label", undefined, box);
+      row.className = "option";
+      const check = element("input", undefined, row);
+      check.type = "checkbox";
+      check.value = choice;
+      check.dataset.list = name;
+      row.append(choice);
+    }
+    return;
+  }
+
+  const input = element(schema.enum ? "select" : "input", undefined, box);
+  if (schema.enum) ["", ...schema.enum].forEach((choice) => element("option", choice, input));
+  if (schema.format === "date") input.type = "date";
+  if (schema.type === "integer" || schema.type === "number") {
+    input.type = "number";
+    input.step = schema.type === "integer" ? "1" : "any";
+  }
+  if (schema.default !== undefined && schema.default !== null) input.placeholder = `default: ${schema.default}`;
+  input.id = label.htmlFor = `field-${name}`;
+  input.dataset.name = name;
+  input.dataset.kind = schema.type || "string";
+  input.required = required;
+}
+
+function showForm() {
+  const tool = tools.find((item) => item.name === byId("tool").value);
+  const schema = tool.input_schema;
+  byId("description").textContent = tool.description;
+  byId("fields").replaceChildren();
+  for (const [name, property] of Object.entries(schema.properties || {})) {
+    addField(name, simplify(property, schema), (schema.required || []).includes(name), schema);
+  }
+}
+
+// Blank inputs are left out so the server applies its own defaults.
+function readArguments() {
+  const args = {};
+  for (const input of byId("fields").querySelectorAll("[data-name]")) {
+    if (input.value === "") continue;
+    const numeric = ["integer", "number"].includes(input.dataset.kind);
+    args[input.dataset.name] = numeric ? Number(input.value) : input.value;
+  }
+  for (const check of byId("fields").querySelectorAll("[data-list]:checked")) {
+    (args[check.dataset.list] ||= []).push(check.value);
+  }
+  return args;
+}
+
+// ---------- 2. Show the result ----------
+
+function addCell(row, value) {
+  const cell = element("td", undefined, row);
+  if (typeof value === "string" && value.startsWith("https://")) {
+    const link = element("a", "Open source", cell);
+    link.href = value;
+    link.target = "_blank";
+    link.rel = "noopener";
+  } else {
+    const text = typeof value === "object" && value !== null ? JSON.stringify(value) : value;
+    cell.textContent = text ?? "—";
+  }
+}
+
+function addTable(title, rows) {
+  element("h3", `${title} (${rows.length})`, byId("result"));
+  const box = element("div", undefined, byId("result"));
+  box.className = "scroll";
+  const table = element("table", undefined, box);
+  const columns = [...new Set(rows.flatMap((row) => Object.keys(row)))];
+  const head = element("tr", undefined, table);
+  columns.forEach((column) => element("th", column, head));
+  for (const row of rows) {
+    const line = element("tr", undefined, table);
+    columns.forEach((column) => addCell(line, row[column]));
+  }
+}
+
+function showResult(response) {
+  byId("result").replaceChildren();
+  if (response.is_error) {
+    element("p", response.text, byId("result")).className = "error";
+    byId("status").textContent = "The tool returned an error.";
+    return;
+  }
+  const data = response.result ?? {};
+  const meta = data.metadata ?? {};
+  byId("status").textContent = `Success · cached: ${meta.cached ?? "unknown"} · data version: ${meta.data_version ?? "unknown"}`;
+  const scalars = {};
+  const entries = Object.entries(data);
+  entries.sort(([a], [b]) => (a === "sources") - (b === "sources"));  // results first, sources last
+  for (const [key, value] of entries) {
+    if (Array.isArray(value)) addTable(key, value.map((item) => typeof item === "object" ? item : { value: item }));
+    else if (key === "summary" && value) addTable(key, [value]);
+    else if (typeof value !== "object") scalars[key] = value;
+  }
+  if (Object.keys(scalars).length) addTable("values", [scalars]);
+  const details = element("details", undefined, byId("result"));
+  element("summary", "Raw JSON", details);
+  element("pre", JSON.stringify(data, null, 2), details);
+}
+
+// ---------- 3. Talk to the backend ----------
+
+async function request(url, options) {
+  const response = await fetch(url, options);
+  const body = await response.json().catch(() => ({}));
+  if (!response.ok) throw new Error(body.detail ? JSON.stringify(body.detail) : `Backend error ${response.status}`);
+  return body;
+}
+
+function showFailure(error) {
+  byId("status").textContent = "Request failed.";
+  byId("result").replaceChildren();
+  element("p", error.message, byId("result")).className = "error";
+}
+
+async function runTool(event) {
+  event.preventDefault();
+  byId("run").disabled = true;
+  byId("status").textContent = "Running...";
+  try {
+    showResult(await request(`/api/tools/${byId("tool").value}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ arguments: readArguments() }),
+    }));
+  } catch (error) {
+    showFailure(error);
+  } finally {
+    byId("run").disabled = false;
+  }
+}
+
+async function start() {
+  try {
+    const { data_mode } = await request("/api/mode");
+    byId("banner").hidden = data_mode !== "mock";
+    tools = await request("/api/tools");
+    tools.forEach((tool) => element("option", tool.name, byId("tool")));
+    byId("tool").addEventListener("change", showForm);
+    byId("form").addEventListener("submit", runTool);
+    showForm();
+    byId("run").disabled = false;
+    byId("status").textContent = "Pick a tool and run it.";
+  } catch (error) {
+    showFailure(error);
+  }
+}
+
+start();
+</script>
+</body>
+</html>

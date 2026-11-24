@@ -1,0 +1,60 @@
+# Every tunable number in the project lives here.
+
+bdcs:
+  ARCC: Ares Capital Corporation
+  OBDC: Blue Owl Capital Corporation
+  FSK: FS KKR Capital Corp
+  BXSL: Blackstone Secured Lending Fund
+
+env:                              # names of environment variables, never values
+  sec_user_agent: SEC_USER_AGENT
+  fred_api_key: FRED_API_KEY
+
+paths:                            # relative to the project root
+  database: data/credit.duckdb
+  mock_database: data/mock.duckdb     # used instead when DATA_MODE=mock
+  edgar_cache: data/edgar_cache
+  tool_docs: docs/TOOLS.md
+
+mock_api_url: http://127.0.0.1:8001
+
+ingest:
+  quarter_ends: 5                 # 4-period trend plus a year-ago point
+  reconcile_tolerance: 0.01       # loans vs the filing's own total fair value
+  min_request_interval_seconds: 0.15   # SEC allows at most 10 requests per second
+  max_retries: 4
+  db_write_timeout_seconds: 30    # wait this long for a reader to let go
+  fuzzy_match_threshold: 92       # fuzzy borrower matches at or above this are stored for review
+
+scoring:
+  points:
+    non_accrual: 4
+    pik: 2
+    deep_markdown: 2
+    markdown: 1
+    dispersion: 2
+  deep_markdown_below: 0.80       # mark_pct under this earns deep_markdown points
+  markdown_below: 0.90            # mark_pct under this (but not deep) earns markdown points
+  dispersion_over_pts: 10
+  max_score: 10
+  exclude_instruments: [Equity]   # kept in totals, left out of scores and dispersion
+
+server:
+  default_page_size: 25
+  max_page_size: 50
+  default_mark_threshold: 0.90
+  default_min_score: 1
+  default_trend_periods: 4
+  default_lookback_days: 365
+  max_lookback_days: 1095         # also how much FRED history ingestion stores
+  holiday_buffer_days: 10         # extra FRED history, so a value precedes the window
+  borrower_match_threshold: 85    # similarity needed to offer a name as a candidate
+  max_candidates: 10
+  db_open_timeout_seconds: 10
+  fred_cache_seconds: 86400
+  fred_fallback_cache_seconds: 300   # retry FRED soon when stored rates had to be used
+
+fred_series:
+  SOFR: Base rate most private credit loans float over
+  BAMLH0A0HYM2: ICE BofA US High Yield option-adjusted spread, a proxy for credit stress
+  DGS10: 10-year Treasury yield
